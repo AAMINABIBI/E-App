@@ -13,7 +13,7 @@ import BarStatus from './Concepts/BarStatus';
 
 //AppRegistry.registerComponent(appName, () => App);
 //AppRegistry.registerComponent(appName, () => ModalBox);
-AppRegistry.registerComponent(appName, () => Pressbale);
+//AppRegistry.registerComponent(appName, () => Pressbale);
 AppRegistry.registerComponent(appName, () => BarStatus);
 
 
