@@ -18,7 +18,7 @@ app.listen(port, () => {
 });
 
 mongoose
-  .connect("mongodb+srv://aaminabibi2324::amna@cluster0.crm78.mongodb.net/aaminabibi2324 ?retryWrites=true&w=majority&appName=Cluster0", {
+  .connect("mongodb://localhost:27017", {
 
     useNewUrlParser: true,
     useUnifiedTopology: true,
