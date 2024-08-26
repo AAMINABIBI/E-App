@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
+// Destructure Schema and model from mongoose
+const { Schema, model } = mongoose;
+
 const orderSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
-    require: true,
+    required: true,  // Fixed typo here ("require" to "required")
   },
   products: [
     {
@@ -66,7 +69,6 @@ const orderSchema = new mongoose.Schema({
   },
 });
 
-
-const Order = mongoose.model("Order",orderSchema);
+const Order = mongoose.model("Order", orderSchema);
 
 module.exports = Order;
